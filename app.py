@@ -3,7 +3,7 @@ import pandas as pd
 
 
 # 데이터 로드 및 전처리
-df = pd.read_csv("Food.csv")
+df = pd.read_csv("Food.csv", encoding="euc-kr")
 st.write("데이터 미리보기")
 st.dataframe(df)
 
