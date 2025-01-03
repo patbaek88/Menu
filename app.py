@@ -8,7 +8,7 @@ st.write("데이터 미리보기")
 st.dataframe(df)
 
 price_min = st.slider('최소 가격', 0, 100000, 0)
-price_max = st.slider('최대 가격', 1000, 1000000, 10000)
+price_max = st.slider('최대 가격', 1000, 200000, 20000)
 delivery = st.checkbox('배달음식')
 hunger = st.checkbox('배고픔')
 materials = ['돼지','소', '닭', '새우', '골뱅이','생선', '조개', '밀가루', '김치', '감자']
