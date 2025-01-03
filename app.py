@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-
+import streamlit as st
 
 # 데이터 로드 및 전처리
 df = pd.read_csv("Food.csv", encoding="euc-kr")
