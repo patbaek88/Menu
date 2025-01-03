@@ -23,6 +23,6 @@ prefer = st.radio('선호자', ['까치', '물개', '균형'])
 filterd_df = df[(df["1인가격"] >= price_min) & (df["1인가격"] <= price_max) & (df["배달가능여부"] == (1 if delivery else 0)) & (df["배고플때"] == (1 if hunger else 0)) & (df["배달가능여부"] == (1 if delivery else 0)) & (df["주재료"].apply(lambda x: any(material in x for material in main_material))) & (df["매콤"] == (1 if spicy else 0)) & (df["달달"] == (1 if sweet else 0)) & (df["짭잘"] == (1 if delivery else 0)) & (df["기름진"] == (1 if oily else 0)) & (df["필요시간"] <= time_max) & (df["선호자"] == prefer)]
 
 st.write("조건에 맞는 메뉴")
-st.write(filtered_df["메뉴"].tolist()
+st.write(filtered_df["메뉴"].tolist())
 
 
